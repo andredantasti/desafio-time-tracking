@@ -357,6 +357,12 @@ body {
   transition: filter 0.3s ease;
 }
 
+#btn-daily,
+#btn-weekly,
+#btn-monthly{
+    color: hsl(236, 100%, 87%);
+}
+
 @media (max-width: 768px) {
   body {
     justify-content: center;
@@ -548,7 +554,8 @@ body {
   .selfCare-content #selfCare-hour{
     display: inline;
     font-size: 2rem;
-    margin-right: 5rem;
+    margin-right: 4rem;
+    text-align: right;
   }
   .work-content #work-last-hour,
   .play-content #play-last-hour,
