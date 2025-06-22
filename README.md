@@ -43,8 +43,8 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://andredantasti.github.io/desafio-time-tracking/)
+- Live Site URL: [Add live site URL here](https://andredantasti.github.io/desafio-time-tracking/)
 
 ## My process
 
