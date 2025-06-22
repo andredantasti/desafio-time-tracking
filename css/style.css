@@ -317,13 +317,13 @@ body {
   margin-bottom: 2.63vh;
 }
 
-.selfCare #selfCare-hour {
+.selfCare #selfcare-hour {
   margin-bottom: 0.87vh;
   font-size: 3.5rem;
   font-weight: 100;
 }
 
-.selfCare #selfCare-last-hour {
+.selfCare #selfcare-last-hour {
   font-size: 0.93rem;
   color: hsl(236, 100%, 87%);
 }
@@ -362,6 +362,7 @@ body {
 #btn-monthly{
     color: hsl(236, 100%, 87%);
 }
+
 
 @media (max-width: 768px) {
   body {
@@ -551,7 +552,7 @@ body {
   .study-content #study-hour,
   .exercise-content #exercise-hour,
   .social-content #social-hour,
-  .selfCare-content #selfCare-hour{
+  .selfCare-content #selfcare-hour{
     display: inline;
     font-size: 2rem;
     margin-right: 4rem;
@@ -562,7 +563,7 @@ body {
   .study-content #study-last-hour,
   .exercise-content #exercise-last-hour,
   .social-content #social-last-hour,
-  .selfCare-content #selfCare-last-hour{
+  .selfCare-content #selfcare-last-hour{
     display: inline;
     width: 115px;
   }

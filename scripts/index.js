@@ -1,4 +1,10 @@
 
+import { getDados } from "./getDados.js";
+import { getDaily } from "./getDaily.js";
+import { getMonthly } from "./getMonthly.js";
+import { getWeekly } from "./getWeekly.js";
+
+
 const btnDaily = document.getElementById("btn-daily");
 console.log(btnDaily);
 const btnWeekly = document.getElementById("btn-weekly");
@@ -6,64 +12,71 @@ console.log(btnWeekly);
 const btnMonthly = document.getElementById("btn-monthly");
 console.log(btnMonthly);
 
-async function getDados() {
-  try {
-  const response = await fetch("http://localhost:5500/data.json");
-  const data = await response.json();  
-  return data;
-  } catch (error) {
-    console.error("Erro get data:", erro);
-  } 
-}
+btnDaily.addEventListener("click", async function(event){
+    event.preventDefault();
 
-async function getDaily(){
-    const data = await getDados();
-    console.log(data);
-    const resultado = data.map(item => {
-      const { current, previous } = item.timeframes.daily;
-      return{
-        title: item.title,
-        current,
-        previous
-      };
-    });
+    const dados = await getDaily();
 
-    console.log(resultado);
-    return resultado;
-}
+    console.log(dados)
+    dados.forEach(item =>{
+        const idBase = item.title.toLowerCase().replace(/\s/,'');
 
-getDaily();
+        const valorCurrent = document.getElementById(`${idBase}-hour`);
+        const valorPrevious = document. getElementById(`${idBase}-last-hour`);
+        
+        if(valorCurrent){
+            valorCurrent.textContent = `${item.current}hrs`;
+        }
 
-async function getMonthly() {
-    const data = await getDados();
-    
-    const resultado = data.map(item => {
-      const {current, previous} = item.timeframes.monthly;
-      return {
-        title: item.title,
-        current,
-        previous
-      };
-    });
+        if(valorPrevious){
+           valorPrevious.textContent = `Last Daily - ${item.previous}hrs`;
+        }
+        
+    })
+  
+})
 
-    console.log(resultado);
-    return resultado;
-}
+btnWeekly.addEventListener("click", async function(event){
+    event.preventDefault();
 
-getMonthly();
+    const dados = await getWeekly();
+  
+   dados.forEach(item =>{
+        const idBase = item.title.toLowerCase().replace(/\s/,'');
 
-async function getWeekly() {
-    const data = await getDados();
-    const resultado = data.map(item =>{
-      const {current, previous} = item.timeframes.weekly;
-      return {
-        title: item.title,
-        current,
-        previous
-      };
-    });
-    console.log(resultado);
-    return resultado;
-}
+        const valorCurrent = document.getElementById(`${idBase}-hour`);
+        const valorPrevious = document. getElementById(`${idBase}-last-hour`);
+        
+        if(valorCurrent){
+            valorCurrent.textContent = `${item.current}hrs`;
+        }
 
-getWeekly();
+        if(valorPrevious){
+            valorPrevious.textContent = `Last Weekly - ${item.previous}hrs`;
+        }
+        
+    })
+
+})
+
+btnMonthly.addEventListener("click", async function(event) {
+    event.preventDefault();
+     const dados = await getMonthly();
+  
+   dados.forEach(item =>{
+        const idBase = item.title.toLowerCase().replace(/\s/,'');
+
+        const valorCurrent = document.getElementById(`${idBase}-hour`);
+        const valorPrevious = document. getElementById(`${idBase}-last-hour`);
+        
+        if(valorCurrent){
+            valorCurrent.textContent = `${item.current}hrs`;
+        }
+
+        if(valorPrevious){
+            valorPrevious.textContent = `Last Monthly - ${item.previous}hrs`;
+        }
+        
+    })
+})
+
