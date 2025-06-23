@@ -1,6 +1,6 @@
 async function getDados() {
   try {
-    const response = await fetchfetch('https://andredantasti.github.io/desafio-time-tracking/data.json');
+    const response = await fetch('https://andredantasti.github.io/desafio-time-tracking/data.json');
     const raw = await response.json();
     const data = Array.isArray(raw) ? raw : Object.values(raw);
     return data;
