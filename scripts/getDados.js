@@ -6,7 +6,7 @@ async function getDados() {
     return data;
   } catch (error) {
     console.error("Erro getDados:", error);
-    return []; // evita erro em quem usar a função
+    return []; // evita erro em quem usar a função.
   }
 }
 
