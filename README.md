@@ -57,6 +57,12 @@ Os usuários devem ser capazes de:
 
 - Publicação no GitHub Pages
 
+## Author
+
+- GitHub - [andredantasti](https://github.com/andredantasti)
+- Frontend Mentor - [@andredantati](https://www.frontendmentor.io/profile/andredantasti)
+- Linkedin - [Andre Dantas](https://www.linkedin.com/in/andre-dantas-84b370366/)
+
 ## 📁 Estrutura do Projeto
 
 ```bash
@@ -77,8 +83,4 @@ desafio-time-tracking/
 
 ---
 
-## Author
 
-- GitHub - [andredantasti](https://github.com/andredantasti)
-- Frontend Mentor - [@andredantati](https://www.frontendmentor.io/profile/andredantasti)
-- Linkedin - [Andre Dantas](https://www.linkedin.com/in/andre-dantas-84b370366/)
