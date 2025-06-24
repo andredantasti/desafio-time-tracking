@@ -2,24 +2,11 @@
 
 Esta é um solução para [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw) 
 
-## Table of contents
+# ⏱️ Desafio Time Tracking
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+Dashboard interativo e responsivo que exibe estatísticas de tempo dedicadas a diferentes atividades, com visualização **diária**, **semanal** e **mensal**.  
+Desenvolvido como desafio prático para consolidar conhecimentos em **HTML**, **CSS** e **JavaScript**.
 
-
-## Overview
-
-### The challenge
 
 Users should be able to:
 
@@ -35,35 +22,60 @@ Os usuários devem ser capazes de:
 - Ver os estados de foco para todos os elementos interativos na página
 - Alternar entre a visualização de estatísticas diárias, semanais e mensais
 
+---
+
+## 🔗 Demo Online
+
+👉 [Clique aqui para ver o projeto funcionando](https://andredantasti.github.io/desafio-time-tracking/)
+
+---
+
+## 🎞️ Preview (GIF Demonstrativo)
+
 ### Screenshot
 
 ![](./images/animacaoDesafioTime.gif)
 
+---
 
+## ⚙️ Tecnologias Utilizadas
 
-### Links
+- HTML5
+- CSS3 (Responsivo / Mobile First)
+- JavaScript (fetch com JSON local)
+- Git & GitHub
+- GitHub Pages (para deploy)
 
-- Solution URL: [Add solution URL here](https://andredantasti.github.io/desafio-time-tracking/)
-- Live Site URL: [Add live site URL here](https://andredantasti.github.io/desafio-time-tracking/)
+---
 
-## My process
+## 🧠 Aprendizados
+- Manipulação de dados via fetch() com JSON
 
-### Built with
+- Separação de lógica em múltiplos arquivos JS
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Javascript (async..await, filter, map, array)
-- API local- json
+- Estilização responsiva com media queries
 
-### What I learned
+- Publicação no GitHub Pages
 
-Aprendi e revisei sobre Layout CSS Grid e sua dependencias, Javascript, revisando a parte de API, async await, arrays, transforma object em array, javascript em modulos;
+## 📁 Estrutura do Projeto
 
-### Continued development
+```bash
+desafio-time-tracking/
+├── index.html
+├── data.json
+├── css/
+│   └── style.css
+├── js/
+│   ├── getDados.js
+│   ├── getDaily.js
+│   ├── getWeekly.js
+│   ├── getMonthly.js
+│   └── index.js
+├── images/
+│   └── demo.gif
+└── README.md
 
-Pretendo continuar a praticar e aprender cada vez mais sobre Javascript caracterísitcas e agregar outras ferramentas para enriquecer nosso conhecimento;
+---
 
 ## Author
 
